@@ -35,10 +35,18 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .philosophy, .education, .work, .skills, .roles, .awards, .philosophy, .hire, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content, 
+.about .about-content,
+.philosophy .philo-content,
+.education .education-content,
+.work .work-content,
+.skills .skills-content,
+.roles .roles-content,
+.awards .awards-content,
+.philosophy .philo-content,
+.hire .hire-content,
 .services .serv-content,
 .skills .skills-content,
 .contact .contact-content{
@@ -299,6 +307,219 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+/* philosophy section styling */
+.philosophy, .teams{
+    color:#fff;
+    background: #111;
+}
+.philosophy .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.philosophy .title::after,
+.teams .title::after{
+    background: #111;
+    content: "about profession";
+}
+.philosophy .philo-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.philosophy .philo-content .card:hover{
+    background: crimson;
+}
+.philosophy .philo-content .card .box{
+    transition: all 0.3s ease;
+}
+.philosophy .philo-content .card:hover .box{
+    transform: scale(1.05);
+}
+.philosophy .philo-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.philosophy .philo-content .card:hover i{
+    color: #fff;
+}
+.philosophy .philo-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* education section styling */
+
+.education .title::after{
+    content: "my qualification";
+}
+.education .education-content .column{
+    width: calc(50% - 30px);
+}
+.education .education-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.education .education-content .left p{
+    text-align: justify;
+}
+.education .education-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.education .education-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+.education .education-content .right .bars{
+    margin-bottom: 15px;
+}
+.education .education-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.education .education-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.education .education-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.education .education-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.education-content .right .html::before{
+    width: 90%;
+}
+.education-content .right .css::before{
+    width: 60%;
+}
+.education-content .right .js::before{
+    width: 80%;
+}
+.education-content .right .php::before{
+    width: 50%;
+}
+.education-content .right .mysql::before{
+    width: 70%;
+}
+
+/* work section styling */
+.work, .teams{
+    color:#fff;
+    background: #111;
+}
+.work .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.work .title::after,
+.teams .title::after{
+    background: #111;
+    content: "about jobs";
+}
+.work .work-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.work .work-content .card:hover{
+    background: crimson;
+}
+.work .work-content .card .box{
+    transition: all 0.3s ease;
+}
+.work .work-content .card:hover .box{
+    transform: scale(1.05);
+}
+.work .work-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.work .work-content .card:hover i{
+    color: #fff;
+}
+.work .work-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* roles section styling */
+.roles, .teams{
+    color:#fff;
+    background: #111;
+}
+.roles .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.roles .title::after,
+.teams .title::after{
+    background: #111;
+    content: "about duties";
+}
+.roles .roles-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.roles .roles-content .card:hover{
+    background: crimson;
+}
+.roles .roles-content .card .box{
+    transition: all 0.3s ease;
+}
+.roles .roles-content .card:hover .box{
+    transform: scale(1.05);
+}
+.roles .roles-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.roles .roles-content .card:hover i{
+    color: #fff;
+}
+.roles .roles-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
 /* skills section styling */
 
 .skills .title::after{
@@ -376,7 +597,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "Activities";
+    content: "Achievements";
 }
 .teams .carousel .card{
     background: #222;
@@ -435,6 +656,187 @@ section .title::after{
 .owl-dot.active,
 .owl-dot:hover{
     background: crimson!important;
+}
+
+/* awards section styling */
+
+.awards .title::after{
+    content: "achievements";
+}
+
+.awards .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.awards .carousel .card:hover{
+    background: crimson;
+}
+.awards .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.awards .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.awards .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.awards .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.awards .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+.awards .awards-content .column{
+    width: calc(50% - 30px);
+}
+.awards .awards-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.awards .awards-content .left p{
+    text-align: justify;
+}
+.awards .awards-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.awards .awards-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+.awards .awards-content .right .bars{
+    margin-bottom: 15px;
+}
+.awards .awards-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.awards .awards-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.awards .awards-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.awards .awards-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.awards-content .right .html::before{
+    width: 90%;
+}
+.awards-content .right .css::before{
+    width: 60%;
+}
+.awards-content .right .js::before{
+    width: 80%;
+}
+.awards-content .right .php::before{
+    width: 50%;
+}
+.awards-content .right .mysql::before{
+    width: 70%;
+}
+
+/* hire section styling */
+.hire, .teams{
+    color:#fff;
+    background: #111;
+}
+.hire .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.hire .title::after,
+.teams .title::after{
+    background: #111;
+    content: "why I'm suitable";
+}
+.hire .hire-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.hire .hire-content .card:hover{
+    background: crimson;
+}
+.hire .hire-content .card .box{
+    transition: all 0.3s ease;
+}
+.hire .hire-content .card:hover .box{
+    transform: scale(1.05);
+}
+.hire .hire-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.hire .hire-content .card:hover i{
+    color: #fff;
+}
+.hire .hire-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 /* contact section styling */
